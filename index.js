@@ -15,6 +15,9 @@ app.use(express.json());
 connectDB();
 
 // Routes
+app.use('/', (req,res)=>{
+  res.json({message:"server is running"})
+});
 app.use('/api/recommendations', recommendationRoutes);
 
 app.get('/', (req, res) => {
