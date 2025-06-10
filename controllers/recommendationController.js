@@ -1,5 +1,4 @@
 import SkinRecommendation from '../models/SkinRecommendation.js';
-import recommendations from '../data/recommendations.json' assert { type: 'json' };
 
 export const getRecommendation = async (req, res) => {
   try {
